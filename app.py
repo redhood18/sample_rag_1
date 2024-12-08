@@ -35,7 +35,7 @@ pipe = pipeline(
     torch_dtype="bfloat16",
     device_map="auto"
 )
-
+retriever=""
 llm_model=HuggingFaceHub(repo_id="meta-llama/Llama-3.2-1B",task="text-generation",huggingfacehub_api_token=api_token,model_kwargs={"temperature": 0.1})
 question="What are the causes for climate change?"
 chat = f"""You are a knowledgeable assistant. Use the following context to answer the question:
