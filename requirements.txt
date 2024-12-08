@@ -2,3 +2,4 @@ langchain
 transformers
 huggingface_hub
 streamlit
+langchain-community
